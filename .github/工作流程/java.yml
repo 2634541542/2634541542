@@ -1,0 +1,33 @@
+- 名称：安装 Java JDK
+  使用：actions/setup-java@v3.0.0
+  和：
+    # 要设置的 Java 版本。采用整个或 semver Java 版本。请参阅 README 文件中支持的语法示例
+    java版本：
+    # Java 分发。请参阅 README 文件中支持的发行版列表
+    分配：
+    # 包类型（jdk、jre、jdk+fx、jre+fx）
+    java-package: # 可选，默认为 jdk
+    # 包的架构
+    架构：# 可选，默认为 x64
+    # 压缩后的JDK所在的路径
+    jdkFile: # 可选
+    # 如果您希望操作检查满足版本规范的最新可用版本，请设置此选项
+    检查最新：# 可选
+    # pom.xml 文件中distributionManagement 存储库的ID。默认是`github`
+    server-id: # 可选，默认为 github
+    # 用于向 Apache Maven 存储库进行身份验证的用户名的环境变量名称。默认为 $GITHUB_ACTOR
+    server-username: # 可选，默认为 GITHUB_ACTOR
+    # 用于对 Apache Maven 存储库进行身份验证的密码或令牌的环境变量名称。默认为 $GITHUB_TOKEN
+    server-password: # 可选，默认为 GITHUB_TOKEN
+    # settings.xml 文件将被写入的路径。默认为 ~/.m2。
+    设置路径：# 可选
+    # 如果存在，则覆盖 settings.xml 文件。默认为“真”。
+    overwrite-settings: # 可选，默认为true
+    # 要导入的 GPG 私钥。默认为空字符串。
+    gpg-private-key: # 可选
+    # GPG 私钥密码的环境变量名称。默认为 $GPG_PASSPHRASE。
+    gpg-passphrase: # 可选
+    # 要缓存依赖项的构建平台的名称。它可以是“maven”或“gradle”。
+    缓存：#可选
+    # 将作业状态传递给发布作业步骤的解决方法。此变量不适用于手动设置
+    job-status: # 可选，默认为 ${{ job.status }}
