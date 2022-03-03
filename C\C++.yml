@@ -1,0 +1,19 @@
+- 名称：运行 Parasoft Jtest
+  # 你可以固定到确切的提交或版本。
+  # 用途：parasoft/run-jtest-action@8883f9f725f0b161ceb49364714​​a3f8d15502587
+  用途：parasoft/run-jtest-action@0.0.2
+  和：
+    # Parasoft Jtest 的安装文件夹。如果未指定，则必须将 cpptestcli 可执行文件添加到 PATH。
+    installDir: # 可选
+    # 运行 Jtest 的工作目录。
+    workingDir: # 可选，默认为 ${{ github.workspace }}
+    # 用于代码分析的测试配置。
+    testConfig: # 可选，默认内置：://Recommended Rules
+    # 代码分析报告的输出文件夹。
+    reportDir: # 可选，默认为报告
+    # 代码分析报告的格式。
+    reportFormat: # 可选，默认为 xml,html,sarif
+    # 输入分析范围。
+    input: # 可选，默认为 jtest.data.json
+    # jtestcli 可执行文件的附加参数。
+    additionalParams: # 可选，默认为
